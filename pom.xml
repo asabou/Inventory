@@ -51,7 +51,6 @@
       <scope>test</scope>
     </dependency>
 
-
     <dependency>
       <groupId>org.openjfx</groupId>
       <artifactId>javafx-base</artifactId>
@@ -97,11 +96,16 @@
       <artifactId>controlsfx</artifactId>
       <version>11.0.1</version>
     </dependency>
-
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
   <build>
-    <testSourceDirectory>src/test/</testSourceDirectory>
+    <testSourceDirectory>src/test</testSourceDirectory>
     <plugins>
       <plugin>
         <artifactId>maven-clean-plugin</artifactId>
@@ -162,16 +166,10 @@
           </execution>
         </executions>
         <configuration>
-          <mainClass>pizzashop.Main</mainClass>
+          <mainClass>inventory.Main</mainClass>
         </configuration>
       </plugin>
     </plugins>
-    <testResources>
-      <testResource>
-        <directory>src/main/test/resources</directory>
-        <filtering>true</filtering>
-      </testResource>
-    </testResources>
   </build>
 
   <pluginRepositories>
