@@ -101,7 +101,7 @@
   </dependencies>
 
   <build>
-    <testSourceDirectory>src/test</testSourceDirectory>
+    <testSourceDirectory>src/main</testSourceDirectory>
     <plugins>
       <plugin>
         <artifactId>maven-clean-plugin</artifactId>
